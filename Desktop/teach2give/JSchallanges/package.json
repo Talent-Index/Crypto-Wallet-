@@ -1,0 +1,17 @@
+{
+  "name": "jschallages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "milestone_1_challenges.js",
+  "scripts": {
+    "dev": "nodemon milestone_1_challenges.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "prettier": "^3.5.3"
+  }
+}
