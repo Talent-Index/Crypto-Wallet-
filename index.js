@@ -69,14 +69,12 @@ class WalletCLI {
                 return;
             }
 
-            // Generate seed phrase
             const { mnemonic, address } = this.wallet.generateSeedPhrase();
             
             console.log('\n⚠️  IMPORTANT: Save your seed phrase in a secure location!');
             console.log('Seed Phrase:', mnemonic);
             console.log('Address:', address);
-
-            // Derive keys and store wallet
+            
             const walletData = this.wallet.deriveKeysFromMnemonic(mnemonic);
             const storageInfo = this.wallet.storeWallet(walletData, password);
 
@@ -168,7 +166,6 @@ class WalletCLI {
         try {
             console.log('\n--- Send Transaction ---');
             
-            // Check if wallet is loaded
             const walletInfo = this.wallet.getWalletInfo();
             if (!walletInfo) {
                 console.log('Please load a wallet first.');
@@ -227,4 +224,5 @@ class WalletCLI {
 
 // Start the application
 const cli = new WalletCLI();
+
 cli.start();
