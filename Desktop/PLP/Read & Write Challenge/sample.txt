@@ -1,3 +1,0 @@
-Hello there,
-This is a test file.
-We are checking file read and write in Python.
